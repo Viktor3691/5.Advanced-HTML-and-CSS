@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+                content="Пошаговая инструкция о том, как создавать свои собственные сниппеты для редактора VSCode: типы сниппетов, правила для названий, структура кода сниппета, примеры">
+        <meta name="keywords" content="VSCode, сниппеты, HTML, CSS, JavaScript">
+        <meta name="author" content="Виктор Виллер">
+
+        <title>Команды и сочетания клавиш Emmet</title>
+        <link rel="stylesheet" href="../CSS/5  Продвинутый HTML и CSS.css">
+
+</head>
+
+<body>
+
+
+        <div class="container">
+
+                <div class="calendar">
+                        <div class="calendar-header calendar-month">Октябрь</div>
+                        <div class="calendar-body">
+                                <div class="calendar-weekday">Вторник</div>
+                                <div class="calendar-day">21</div>
+                                <div class="calendar-year">2025</div>
+                        </div>
+                </div>
+                <script>
+                        const now = new Date();
+                        const month = now.toLocaleString('default', { month: 'long' });
+                        const weekday = now.toLocaleString('default', { weekday: 'long' });
+                        const day = now.toLocaleString('default', { day: '2-digit' });
+                        const year = now.toLocaleString('default', { year: 'numeric' });
+
+                        document.querySelector('.calendar-month').textContent = month;
+                        document.querySelector('.calendar-weekday').textContent = weekday;
+                        document.querySelector('.calendar-day').textContent = day;
+                        document.querySelector('.calendar-year').textContent = year;
+                </script>
+
+                <h1>Продвинутый HTML и CSS</h1>
+
+
+                <a href="5.1 Какой редактор кода или IDE можно выбрать..html">1</a>
+                <a href="5.2 Подробный обзор на редактор VS Code..html">2</a>
+                <a href="5.3 Набор плагинов для Visual Studio Code.html">3</a>
+                <a href="5.4 Расширения VS Code Исмаила Усеинова - курс Stepik.html">4</a>
+                <a href="5.5 Расширение VS Code VS HTML to CSS.html">5</a>
+                <a href="5.6 Фрагменты (Сниппеты) кода в Visual Studio Code.html">6</a>
+                <a href="5.7 Мини-курс по Emmet .html">7</a>
+                <a href="5.8 Команды и сочетания клавиш Emmet.html">8</a>
+
+
+
+                <div class="container_text">
+                        <h2><a href="https://marketplace.visualstudio.com/items?itemName=Bognaum.emmet-commands-and-keybindings"
+                                        target="_blank" rel="noopener noreferrer">5.8 Команды и сочетания клавиш
+                                        Emmet.</a></h2>
+                        <img src="../IMG/53.png" alt="53" class="pictures1">
+
+                        <p>Согласно <a href="https://docs.emmet.io/" target="_blank"
+                                        rel="noopener noreferrer">документации
+                                        Emmet, </a> обладает тремя базовыми функциями:</p>
+                        <ol>
+                                <li><strong>Расширение аббревиатур </strong>- Emmet использует специальный синтаксис,
+                                        позволяющий
+                                        преобразовывать короткие фрагменты кода, напоминающие селекторы CSS, в
+                                        полноценный HTML-код. Преобразование, как правило, выполняется по нажатию
+                                        клавиши `Tab`.</li>
+                                <li><strong>Emmet actions</strong> — команды для расширенного редактирования HTML-кода
+                                </li>
+                                <li><strong>Сниппеты Emmet</strong> — это заранее сохранённые куски кода, которые
+                                        вызываются с
+                                        помощью специальных сокращений и формул. Emmet
+                                        используется преимущественно для создания HTML-каркаса, но его также можно
+                                        применять для
+                                        написания CSS и JavaScript.</li>
+                        </ol>
+
+                </div>
+
+                <div class="container_text">
+                        <h3>Аббревиатуры</h3>
+                        Сокращения - это основа инструментария Emmet: эти специальные выражения анализируются во
+                        время выполнения и
+                        преобразуются в структурированный блок кода, например, HTML. <br>Синтаксис аббревиатур
+                        похож
+                        на CSS-селекторы с несколькими
+                        расширениями, специфичными для генерации кода. Так что каждый веб-разработчик уже знает,
+                        как им пользоваться.
+
+                        Вот пример: эта аббревиатура
+
+                        <div class="ramka">
+                                #page&gt;div.logo+ul#navigation&gt;li*5&gt;a{Item $}
+                        </div>
+
+                        <img src="../GIF/21.gif" alt="21gif" class="pictures1">
+
+                        <div id="page">
+                                <div class="logo"></div>
+                                <ul id="navigation">
+                                        <li><a href="">Item 1</a></li>
+                                        <li><a href="">Item 2</a></li>
+                                        <li><a href="">Item 3</a></li>
+                                        <li><a href="">Item 4</a></li>
+                                        <li><a href="">Item 5</a></li>
+                                </ul>
+                        </div>
+
+                        <h3>Синтаксис сокращений</h3>
+
+                        <p>В этом и есть принцип работы Emmet — пишем простые сокращения, нажимаем TAB и они
+                                разворачиваются в сложные фрагменты
+                                кода. Покажем на примере тега div: чтобы его развернуть, пишем div, нажимаем TAB и
+                                разворачивается тег. <br>
+                                <br>
+                                Здесь нет определенного набора тегов — каждый разработчик может написать любое слово и
+                                преобразовать его в тег, который
+                                ему будет удобно использовать. Если написать test и нажать TAB — получится тег: . Таких
+                                тегов может быть сколько угодно
+                                — все зависит от ваших задач и фантазии.
+
+                                Можно использовать имена элементов, такие как div для создания HTML-тегов.
+                        </p>
+
+                        <h4>Элементы</h4>
+
+                        <p>Вы можете использовать названия элементов, такие как div или p, для создания HTML-тегов. В
+                                Emmet нет предопределенного
+                                набора доступных имен тегов, вы можете написать любое слово и преобразовать его в тег:
+                        </p>
+
+                        <div class="ramka">
+                                div → &lt;div&gt;&lt;/div&gt; <br>footer → &lt;foo&gt;&lt;/foo&gt; <br>
+                        </div>
+                        <div></div>
+                        <footer></footer>
+                        <img src="../GIF/22.gif" alt="22gif" class="pictures1">
+
+                        <div></div>
+                        <foo></foo>
+
+
+
+
+
+                        <h4>Операторы вложенности</h4>
+                </div>
+
+                <div class="container_text">
+                        <h2>Emmet actions</h2>
+                        <p> </p>
+                        <br>
+                </div>
+
+                <div class="button-lg"></div>
+
+
+        </div>
+
+</body>
+
+</html>
+"<!--\"rT\"- Рамка ТЕРМИНАЛ  -->",
+"<!--\"rH\"- Рамка HTML  -->",
+"<!--\"rC\"- Рамка CSS  -->",
+"<!--\"cT\"- Контейнер TEXT  -->",

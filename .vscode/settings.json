@@ -1,0 +1,5 @@
+{
+  "markdown-links.graphType": "default",
+  "editor.renderWhitespace": "trailing",
+  "workbench.editor.enablePreviewFromQuickOpen": true
+}

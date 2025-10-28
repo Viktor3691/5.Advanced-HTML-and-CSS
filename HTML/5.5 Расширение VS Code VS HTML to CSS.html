@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Продвинутый HTML и CSS</title>
+        <link rel="stylesheet" href="../CSS/5  Продвинутый HTML и CSS.css">
+</head>
+
+<body>
+        <div class="container">
+                <a href="5.1 Какой редактор кода или IDE можно выбрать..html">1</a>
+                <a href="5.2 Подробный обзор на редактор VS Code..html">2</a>
+                <a href="5.3 Набор плагинов для Visual Studio Code.html">3</a>
+                <a href="5.4 Расширения VS Code Исмаила Усеинова - курс Stepik.html">4</a>
+                <a href="5.5 Расширение VS Code VS HTML to CSS.html">5</a>
+                <a href="5.6 Фрагменты (Сниппеты) кода в Visual Studio Code.html">6</a>
+                <a href="5.7 Мини-курс по Emmet .html">7</a>
+                <a href="5.8 Команды и сочетания клавиш Emmet.html">8</a>
+
+                <h1>Продвинутый HTML и CSS</h1>
+
+                <h2>5.5 Расширение VS Code VS HTML to CSS</h2>
+
+                <h3>VS HTML to CSS расширение для VS Code, которое позволяет быстро перенести селекторы из HTML в CSS.
+                </h3>
+                <div class="container_text_w">
+
+                        <a href="vscode:extension/neptunedesign.vs-html-to-css" target="_blank"
+                                rel="noopener noreferrer"><img src="../IMG/39.png" alt="39" class="pictures"></a>
+                        <h3>Скриншот</h3>
+                        <hr>
+
+                        <img src="../GIF/2.gif" alt="gif2" class="pictures">
+
+                        <h3> Характеристики</h3>
+                        <hr>
+
+                        <p>Создаёт шаблон CSS на основе выбранного HTML</p>
+                        <li>Обращает внимание только на классы, игнорирует идентификаторы и другие возможные селекторы
+                        </li>
+
+                        <h3>Настройки расширения</h3>
+
+                        <p>Открыть Preferences -&gt; Settings</p>
+                        <div class="ramka">
+                                //Символы, которые будут добавлены после классов CSS (включая пробелы)
+                                <br>
+                                "vs-html-to-css.append": " {\n}\n", <br>
+                                // Отключить уведомление
+                                <br>
+                                "vs-html-to-css.disableNotification": false, <br>
+                                // Списки классов, которые CSS должен игнорировать
+                                <br>
+                                "vs-html-to-css.ignore": ["container", "row"], <br>
+                        </div>
+
+                        <p>Настройка в принципе не нужна. Например, если у вас был следующий HTML</p>
+                        <div class="ramka">HTML <br>
+                                <br>
+                                &lt;a class="card" href="#"&gt;<br>
+                                &lt;div class="card_head"&gt; <br>
+                                &lt;img src="#" alt="" class="card_image"&gt;&lt;/div&gt;<br>
+                                &lt;div class="card_body"&gt;<br>
+                                &lt;h3 class="card_title"&gt;Название&lt;/h3&gt;<br>
+                                &lt;p class="card_text"&gt;Текст&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;/a&gt;<br>
+                        </div>
+                        <p>Выберите весь HTML
+                        <div class="ramka"><span>CTRL + a</span></div>
+                        , чтобы скопировать следующий CSS в буфер обмена нажмите <br>
+                        <div class="ramka"><span>CTRL + c</span></div>
+                        перейдите в CSS и нажмите <br>
+                        <div class="ramka"><span>CTRL + v</span></div>
+                        </p>
+                        <p>Получаем</p>
+
+                        <div class="ramka">
+                                CSS <br>
+                                .card {<br>
+                                }<br>
+                                .card_head {<br>
+                                }<br>
+                                .card_image {<br>
+                                }<br>
+                                .card_body {<br>
+                                }<br>
+                                .card_title {<br>
+                                }<br>
+                                .card_text {<br>
+                                }<br>
+                        </div>
+                        <p>
+                                Если вы хотите добавить дополнительную строку CSS, то просто добавьте его после <br>
+                        <div class="ramka">
+                                "vs-html-to-css.append": " {\n}\n"
+                        </div>
+                        </p>
+
+                        <p>{\n} ещё один символ <span>\n</span><br>
+                        <div class="ramka">
+                                "vs-html-to-css.append": " {\n\n}\n"
+                        </div>
+                        </p>
+                        <p>добавляем и получаем CSS код с дополнительной строкой.</p>
+
+                        <div class="ramka">
+                                CSS <br>
+                                .card {<br>
+                                <br>
+                                }<br>
+                                .card_head {<br>
+                                <br>
+                                }<br>
+                                .card_image {<br>
+                                <br>
+                                }<br>
+                                .card_body {<br>
+                                <br>
+                                }<br>
+                                .card_title {<br>
+                                <br>
+                                }<br>
+                                .card_text {<br>
+                                <br>
+                                }<br>
+                        </div>
+                </div>
+
+        </div>
+
+
+
+
+        <br><br><br><br><br>
+</body>
+
+</html>
