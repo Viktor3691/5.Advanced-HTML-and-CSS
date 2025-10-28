@@ -54,6 +54,11 @@ span {
   color: #d13708;
   background: #e3f1fa;
 }
+.span {
+  font-size: 18;
+  color: #000;
+  background: yellow;
+}
 .anchor {
   display: inline-block;
   margin-right: 0.25rem;
