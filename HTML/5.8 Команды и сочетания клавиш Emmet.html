@@ -54,35 +54,34 @@
 
 
 
+
+                <h2><a href="https://marketplace.visualstudio.com/items?itemName=Bognaum.emmet-commands-and-keybindings"
+                                target="_blank" rel="noopener noreferrer">5.8 Команды и сочетания клавиш
+                                Emmet.</a></h2>
+                <img src="../IMG/53.png" alt="53" class="pictures1">
+
+                <p>Согласно <a href="https://docs.emmet.io/" target="_blank" rel="noopener noreferrer">документации
+                                Emmet, </a> обладает тремя базовыми функциями:</p>
+                <ol>
+                        <li><strong>Расширение аббревиатур </strong>- Emmet использует специальный синтаксис,
+                                позволяющий
+                                преобразовывать короткие фрагменты кода, напоминающие селекторы CSS, в
+                                полноценный HTML-код. Преобразование, как правило, выполняется по нажатию
+                                клавиши `Tab`.</li>
+                        <li><strong>Emmet actions</strong> — команды для расширенного редактирования HTML-кода
+                        </li>
+                        <li><strong>Сниппеты Emmet</strong> — это заранее сохранённые куски кода, которые
+                                вызываются с
+                                помощью специальных сокращений и формул. Emmet
+                                используется преимущественно для создания HTML-каркаса, но его также можно
+                                применять для
+                                написания CSS и JavaScript.</li>
+                </ol>
+
+
+
                 <div class="container_text">
-                        <h2><a href="https://marketplace.visualstudio.com/items?itemName=Bognaum.emmet-commands-and-keybindings"
-                                        target="_blank" rel="noopener noreferrer">5.8 Команды и сочетания клавиш
-                                        Emmet.</a></h2>
-                        <img src="../IMG/53.png" alt="53" class="pictures1">
-
-                        <p>Согласно <a href="https://docs.emmet.io/" target="_blank"
-                                        rel="noopener noreferrer">документации
-                                        Emmet, </a> обладает тремя базовыми функциями:</p>
-                        <ol>
-                                <li><strong>Расширение аббревиатур </strong>- Emmet использует специальный синтаксис,
-                                        позволяющий
-                                        преобразовывать короткие фрагменты кода, напоминающие селекторы CSS, в
-                                        полноценный HTML-код. Преобразование, как правило, выполняется по нажатию
-                                        клавиши `Tab`.</li>
-                                <li><strong>Emmet actions</strong> — команды для расширенного редактирования HTML-кода
-                                </li>
-                                <li><strong>Сниппеты Emmet</strong> — это заранее сохранённые куски кода, которые
-                                        вызываются с
-                                        помощью специальных сокращений и формул. Emmet
-                                        используется преимущественно для создания HTML-каркаса, но его также можно
-                                        применять для
-                                        написания CSS и JavaScript.</li>
-                        </ol>
-
-                </div>
-
-                <div class="container_text">
-                        <h3>Аббревиатуры </h3>
+                        <h2>Расширение аббревиатур </h2>
 
                         <p>Сокращения - это основа инструментария Emmet: эти специальные выражения анализируются во
                                 время выполнения и
@@ -93,12 +92,22 @@
                                 как им пользоваться.
 
                                 Вот пример: эта аббревиатура</p>
+                        <strong>#page&gt;div.logo+ul#navigation&gt;li*5&gt;a{Item $}</strong>
 
                         <div class="ramka">
-                                #page&gt;div.logo+ul#navigation&gt;li*5&gt;a{Item $}
+                                &lt;div id="page"&gt; <br>
+                                &nbsp;&nbsp;&lt;div class="logo"&gt;&lt;/div&gt; <br>
+                                &nbsp;&nbsp;&lt;ul id="navigation"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 1&lt;/a>&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 2&lt;/a>&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 3&lt;/a>&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 4&lt;/a>&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Item 5&lt;/a>&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&lt;/ul&gt;<br>
+                                &lt;/div&gt;
                         </div>
 
-                        <img src="../GIF/21.gif" alt="21gif" class="pictures1">
+
 
                         <div id="page">
                                 <div class="logo"></div>
@@ -111,13 +120,17 @@
                                 </ul>
                         </div>
 
+                        <img src="../GIF/21.gif" alt="21gif" class="pictures1">
+
+
+
 
 
 
 
                         <div class="container_text">
 
-                                <h3>Синтаксис сокращений</h3>
+                                <h2>Синтаксис сокращений</h2>
 
                                 <p>В этом и есть принцип работы Emmet — пишем простые сокращения, нажимаем TAB и они
                                         разворачиваются в сложные фрагменты
@@ -155,10 +168,16 @@
                                 <div></div>
                                 <foo></foo>
 
+                                <p><a href="https://webdesign-master.ru/blog/html-css/2.html" target="_blank"
+                                                rel="noopener noreferrer">Справочник EMMET
+                                                сокращений для ускорения верстки</a><br>
+                                        "https://webdesign-master.ru/blog/html-css/2.html"
+                                </p>
+
                         </div>
 
                         <div class="container_text">
-                                <h3>Операторы вложенности</h3>
+                                <h2>Операторы вложенности</h2>
 
                                 Задать положение элементов внутри генерируемого дерева — должны ли они быть внутри или
                                 рядом с элементом контекста — помогают операторы вложенности. Их четыре: <span>«дочерние
@@ -348,27 +367,599 @@
                                         </li>
                                 </ol>
                         </div>
-                        <i>этот материал изучен на сайте <a
-                                        href="https://tproger.ru/articles/kak-plagin-emmet-pomogaet-uskorit-rabotu-s-programmnym-kodom target="
-                                        _blank" rel="noopener noreferrer">tproger.ru</a></i>
+                        <div class="container_text">
+                                <h2>Умножение</h2>
+                                <p>Более функциональный оператор — «умножение», который обозначается звездочкой «*». Он
+                                        помогает задать, сколько раз должен
+                                        выводиться элемент. Например, если нужно развернуть список ul и сделать в нем
+                                        несколько элементов li — прописываем
+                                        оператор «умножение», указываем сколько штук нам надо и Emmet автоматически
+                                        прописывает нам этот код. Будет столько
+                                        элементов li, сколько указали. <br>
+                                        <br>
+                                        С помощью оператора * можно задать, сколько раз должен выводиться элемент: <br>
+                                        <br>
+                                        <strong> ul>li <span class="span">*3</span></strong>
+                                </p>
+
+                                <div class="ramka"> HTML
+                                        <br>
+                                        <br>
+                                        &lt;ul><br>
+                                        &nbsp;&nbsp;&lt;li>&lt;/li&gt;<br>
+                                        &nbsp;&nbsp;&lt;li>&lt;/li&gt;<br>
+                                        &nbsp;&nbsp;&lt;li>&lt;/li&gt;<br>
+                                        &lt;/ul&gt;
+                                        <br>
+                                </div>
+
+                                <p>Оператор <span class="span">«*»</span> разворачивает код и прописывает три элемента
+                                        li.</p>
+                        </div>
+
+                        <div class="container_text">
+                                <h2>Комбинирование</h2>
+                                <p> Можно комбинировать разных операторов — использовать одновременно вложенные и
+                                        соседние элементы. Допустим, нужно
+                                        обернуть разметку страницы из предыдущего примера в какой-то wrapper, который
+                                        будет ограничивать ширину экрана. Тогда
+                                        добавляем div и вкладываем в него элементы из предыдущего примера:
+                                        div>header+main+sidebar+footer. Жмем TAB и получаем
+                                        разметку с разными операторами. <br>
+                                        <br>
+                                        <strong>div <span class="span">></span>header<span
+                                                        class="span">+</span>main<span class="span">+</span>aside<span
+                                                        class="span">+</span>footer</strong>
+                                </p>
+
+                                <div class="ramka"> HTML
+                                        <br>
+                                        <br>
+                                        &lt;div&gt;<br>
+                                        &nbsp;&nbsp;&lt;header&gt;&lt;/header&gt;<br>
+                                        &nbsp;&nbsp;&lt;main&gt;&lt;/main&gt;<br>
+                                        &nbsp;&nbsp;&lt;aside&gt;&lt;/aside&gt;<br>
+                                        &nbsp;&nbsp;&lt;footer&gt;&lt;/footer&gt;<br>
+                                        &lt;/div&gt;
+                                        <br>
+                                </div>
+
+                                <p>Emmet помогает комбинировать вложенные и соседние элементы.</p>
+
+                        </div>
+
+                        <div class="container_text">
+                                <h2>Операторы атрибутов</h2>
+                                <p>Быстро добавить к сгенерированному элементу атрибут помогут специальные операторы:
+                                        <br>
+                                <ol>
+                                        <li>
+                                                <h3>ID и Class;</h3>
+
+                                                <p>В Emmet синтаксис для описания элементов похож на CSS-селекторы, в
+                                                        которых обращаемся к элементу по id или классу. Здесь
+                                                        тот же принцип: пишем тег, у него пишем <span>class — через
+                                                                точку, </span><kbd>.</kbd> или
+                                                        <span>id — через решетку, </span><kbd>#</kbd> и наш тег
+                                                        развернется с
+                                                        соответствующим классом. <br>
+                                                        <br>
+                                                        Синтаксис Emmet для описания элементов похож на CSS-селекторы
+                                                        <br>
+                                                        <br>
+                                                        В CSS используется обозначения elem#id и elem.class, чтобы
+                                                        добраться до элементов с указанными атрибутами id или class.
+                                                        В Emmet вы можете использовать тот же синтаксис для добавления
+                                                        этих атрибутов к указанному элементу
+                                                </p>
+
+                                                <p><strong>#wrap</strong></p>
+                                                <p>Пишем - через # прописываем id wrap, и Emmet
+                                                        разворачивает тег div с соответствующим id.</p>
+                                                <div class="ramka"> HTML
+                                                        <br>
+                                                        <br>
+                                                        &lt;div id="wrap"&gt;&lt;/div&gt;
+                                                        <br>
+                                                </div>
+
+                                                <p><strong>.wrapper</strong></p>
+                                                <p>Пишем - через точку прописываем class wrapper, и Emmet
+                                                        разворачивает тег div с соответствующим классом.</p>
+                                                <div class="ramka"> HTML
+                                                        <br>
+                                                        <br>
+                                                        &lt;div class="wrapper"&gt;&lt;/div&gt;
+                                                        <br>
+                                                </div>
+
+                                                <p>Можно комбинировать <br>
+                                                        <br>
+                                                        <strong>#id-wrap.wrapper</strong>
+                                                </p>
+
+                                                <div class="ramka"> HTML
+                                                        <br>
+                                                        <br>
+                                                        &lt;div id="id-wrap" class="wrapper"&gt;&lt;/div&gt;
+                                                        <br>
+                                                </div>
+
+                                                <p>Пишем id и class без тега — Emmet по-умолчанию развернет тег div.</p>
+
+
+
+                                        </li>
+                                        <li>
+                                                <h3>Настраиваемые атрибуты — [attr];</h3>
+
+                                                <p>Если хотим добавить какие-то настраиваемые атрибуты к элементу,
+                                                        используем оператор <span class="span">[attr] </span>— как в
+                                                        CSS. Например, чтобы
+                                                        указать тип кнопки disabled — «неактивна» — пишем в квадратных
+                                                        скобках эти атрибуты и Emmet развернет аббревиатуры в
+                                                        нужный код. <br>
+                                                        <br>
+                                                        Можно использовать [attr] нотацию (как в CSS) для добавления
+                                                        настраиваемых атрибутов к элементу:
+                                                </p>
+                                                <p><strong>button <span class="span">[</span>type="button" disabled<span
+                                                                        class="span">]</span></strong></p>
+
+                                                <div class="ramka"> HTML
+                                                        <br>
+                                                        <br>
+                                                        &lt;button type="button" disabled="disabled"&gt;&lt;/button&gt;
+                                                        <br>
+                                                </div>
+
+                                                <p>Пишем в квадратных скобках нужные атрибуты и плагин разворачивает их
+                                                        в код.</p>
+
+                                        </li>
+                                        <li>
+                                                <h3>Нумерация позиций — $.</h3>
+
+                                                <p>В примере про умножение показывали, как с помощью знака «*»
+                                                        развернуть несколько элементов. Теперь посмотрим, как каждый
+                                                        класс обозначить цифрой — к примеру, от одного до трех. Для
+                                                        этого пишем знак доллара «$» и умножаем на три. Так, к
+                                                        каждому классу добавилась цифра. <br>
+                                                        <br>
+                                                        С помощью оператора умножения <span class="span"> *</span> можно
+                                                        повторить элементы, оператор <span class="span">$</span> поможет
+                                                        пронумеровать их
+                                                        <br>
+                                                        <br>
+
+                                                        <strong>ul>li.item$*3</strong>
+                                                </p>
+                                                <p>Пишем знак <span class="span">«$»</span> и умножаем <span
+                                                                class="span">«*»</span> на три — к каждому классу
+                                                        добавляем цифра от одного до трех.</p>
+
+                                                <div class="ramka"> HTML
+                                                        <br>
+                                                        <br>
+                                                        &lt;ul&gt; <br>
+                                                        &nbsp;&nbsp; &lt;li class="item1"&gt;&lt;/li&gt;<br>
+                                                        &nbsp;&nbsp; &lt;li class="item2"&gt;&lt;/li&gt;<br>
+                                                        &nbsp;&nbsp; &lt;li class="item3"&gt;&lt;/li&gt;<br>
+                                                        &lt;/ul&gt;
+                                                        <br>
+                                                </div>
+                                                <br>
+
+                                                <p>С помощью модификатора @ можно изменить направление нумерации или
+                                                        изметить началное значение нумерации, используем
+                                                        <span>модификатор собаки — «@» с минусом «-».</span>
+                                                </p>
+                                                <p><strong>ul>li.item$@-*3</strong></p>
+
+                                                <div class="ramka"> HTML
+                                                        <br>
+                                                        <br>
+                                                        &lt;ul&gt;<br>
+                                                        &nbsp;&nbsp;&lt;li class="item3"&gt;&lt;/li&gt;<br>
+                                                        &nbsp;&nbsp;&lt;li class="item2"&gt;&lt;/li&gt;<br>
+                                                        &nbsp;&nbsp;&lt;li class="item1"&gt;&lt;/li&gt;<br>
+                                                        &lt;/ul>
+                                                        <br>
+                                                </div>
+
+                                                <p>Модификатор «@» с минусом «-» изменил направление нумерации в
+                                                        обратную сторону — от трех до одного.</p>
+
+                                                <p>Также с помощью оператора собаки «@» можно указать, чтобы нумерация
+                                                        начиналась не с единицы, а с какой-то другой цифры. <br>
+                                                        Тогда пишем «$», «@» и цифру, с которой хотим начать нумерацию —
+                                                        например, «тройку». Так, нумерация будет идти в
+                                                        последовательности: <span>3-4-5 </span> и так далее. </p>
+
+                                                <p><strong>ul>li.item$@3*3</strong></p>
+
+                                                <div class="ramka"> HTML
+                                                        <br>
+                                                        <br>&lt;ul&gt;<br>
+                                                        &nbsp;&nbsp;&lt;li class="item3"&gt;&lt;/li&gt;<br>
+                                                        &nbsp;&nbsp;&lt;li class="item4"&gt;&lt;/li&gt;<br>
+                                                        &nbsp;&nbsp;&lt;li class="item5"&gt;&lt;/li&gt; <br>
+                                                        &lt;/ul&gt;
+                                                        <br>
+                                                </div>
+
+                                                <p>Поставим перед «тройкой»
+                                                        минус и нумерация пойдет в обратной последовательности с той
+                                                        цифры, которую мы указали: <span>3-4-5</span>.</p>
+
+                                                <p><strong>ul>li.item$@-3*3</strong></p>
+
+                                                <div class="ramka"> HTML
+                                                        <br>
+                                                        <br>
+                                                        &lt;ul&gt;<br>
+                                                        &nbsp;&nbsp; &lt;li class="item5"&gt;&lt;/li&gt;<br>
+                                                        &nbsp;&nbsp; &lt;li class="item4"&gt;&lt;/li&gt;<br>
+                                                        &nbsp;&nbsp; &lt;li class="item3"&gt;&lt;/li&gt;<br>
+                                                        &lt;/ul&gt;
+                                                        <br>
+                                                </div>
+                                        </li>
+                                </ol>
+
+                                </p>
+
+                        </div>
+                        <div class="container_text">
+                                <h2>Добавляем текст</h2>
+                                <p> Фигурные скобки <span class="span">«{}»</span> помогут добавить в код нужный нам
+                                        текст. Для этого пишем тег, добавляем фигурные скобки и внутри
+                                        скобок прописываем свой текст. Нажимаем TAB и получаем текст, который «обернут»
+                                        в указанный перед фигурными скобками
+                                        тег. <br>
+                                        <br>
+                                        Для добавления текста к элементу можно использовать фигурные скобки {}
+                                </p>
+                                <p><strong>p{Здесь какой-то текст}</strong></p>
+
+                                <div class="ramka"> HTML
+                                        <br>
+                                        <br>
+                                        &lt;p&gt;Здесь какой-то текст&lt;/p&gt;
+                                        <br>
+                                </div>
+
+                                <p>Текст внутри фигурных скобок Emmet разворачивает в текст, «обернутый» в указанный
+                                        перед скобками тег.</p>
+
+                        </div>
+
+                        <div class="container_text">
+                                <h2>«Рыба» текста — Lorem Ipsum</h2>
+                                <p>Разработчикам часто бывает нужно проверить верстку на переполнение или использовать
+                                        рандомный текст для каких-то других
+                                        задач. Часто для этого используют специальные сервисы, которые генерируют
+                                        подобные тексты. <br>
+                                        Но Emmet помогает не
+                                        отвлекаться на переключение между вкладками браузера и сделать «рыбу» текста с
+                                        помощью ввода простой аббревиатуры:
+                                        lorem. В переводе с греческого, Lorem Ipsum означает «все буквы». <br>
+                                        <br>
+                                        Когда нужно заполнить какой-то элемент кода текстом — пишем сокращение lorem,
+                                        нажимаем TAB и Emmet разворачивает его в
+                                        текст из 30 слов.
+                                </p>
+
+                                <p><strong>lorem</strong></p>
+
+                                <div class="ramka"> HTML
+                                        <br>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro aspernatur
+                                        ratione est repudiandae explicabo facilis in quas? Fugit, ipsam. Accusantium
+                                        totam quas excepturi quasi possimus soluta voluptatem quidem nulla! Odit.
+                                        <br>
+                                </div>
+
+
+
+                        </div>
+
+                        <div class="container_text">
+                                <h2>Псевдонимы</h2>
+                                <p>Названия некоторых тегов очень длинные. Сократить их написание помогают псевдонимы
+                                        названий тегов. Например, чтобы не
+                                        писать длинное слово blockquote, используем псевдоним bq, который
+                                        разворачивается в полноценный тег. <br>
+                                        <br>
+                                        Псевдонимы названий тегов
+                                </p>
+                                <p><strong><span>bq</span></strong></p>
+                                <div class="ramka"> HTML
+                                        <br>
+                                        <br>
+                                        &lt;blockquote&gt;&lt;/blockquote&gt;
+                                        <br>
+                                </div>
+
+                                <p>Псевдонимы помогают сократить время на написание длинных имен тегов.</p>
+
+                        </div>
+
+
+
+                        <i>этот материал изучен на сайте
+                                <a href="https://tproger.ru/articles/kak-plagin-emmet-pomogaet-uskorit-rabotu-s-programmnym-kodom"
+                                        target="_blank" rel="noopener noreferrer">tproger.ru</a></i>
+
                 </div>
 
                 <div class="container_text">
-                        <h2>
-                                <h2>Emmet actions</h2>
-                        </h2>
-                        <p> </p>
-                        <br>
+
+                        <h2>Emmet actions</h2>
+
+                        <p>Действия Emmet могут быть очень полезными. <br>
+                                Сначала нужно настроить меню команд Emmet.</p>
+
+                        <p style="color: blue;">Настройка команд действий Emmet</p>
+
+                        <table border="1">
+                                <tr>
+                                        <th width="150">Привязка ключей</th>
+                                        <th width="300">Команда</th>
+                                        <th width="300"> Название</th>
+                                </tr>
+
+                                <tr>
+                                        <td>Alt + E, E</td>
+                                        <td>editor.emmet.action.expandAbbreviation</td>
+                                        <td>Emmet: Expand Abbreviation <br>
+                                                Эммет: раскрытие аббревиатуры</td>
+                                </tr>
+
+                                <tr>
+                                        <td>Alt+E, W</td>
+                                        <td>editor.emmet.action.wrapWithAbbreviation</td>
+                                        <td>Emmet: HTML - Wrap With Abbreviation <br>
+                                                Эммет: HTML — перенос с сокращением</td>
+                                </tr>
+
+
+                                <tr>
+                                        <td><br></td>
+                                        <td><br></td>
+                                        <td><br></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Alt + &gt;</td>
+                                        <td>editor.emmet.action.nextEditPoint</td>
+                                        <td>
+                                                Emmet: HTML - Go to - Next Edit Point<br>
+                                                Эммет: HTML — перейти к — следующая точка редактирования
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>Alt + &lt;</td>
+                                        <td>editor.emmet.action.prevEditPoint</td>
+                                        <td> Emmet: HTML - Go to - Prev Edit Point<br>
+                                                Эммет: HTML — переход к предыдущей точке редактирования</td>
+                                </tr>
+
+                                <tr>
+                                        <td><br></td>
+                                        <td><br></td>
+                                        <td><br></td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td>editor.emmet.action.balanceIn</td>
+                                        <td>Emmet: HTML - Select - Balance In <br>
+                                                Эммет: HTML — выбор — баланс</td>
+                                </tr>
+
+                                <tr>
+                                        <td>Ctrl + Shift + A</td>
+                                        <td>editor.emmet.action.balanceOut</td>
+                                        <td>Emmet: HTML - Select - Balance Out <br>
+                                                Эммет: HTML — выбор — уравновешивание</td>
+                                </tr>
+
+                                <tr>
+                                        <td><br></td>
+                                        <td><br></td>
+                                        <td><br></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Ctrl + Alt + &gt;</td>
+                                        <td>editor.emmet.action.selectNextItem</td>
+                                        <td>Emmet: HTML - Select - Next Item <br>
+                                                Эммет: HTML — выбор — следующий элемент</td>
+                                </tr>
+
+                                <tr>
+                                        <td>Ctrl + Alt + &lt;</td>
+                                        <td>editor.emmet.action.selectPrevItem</td>
+                                        <td>Emmet: HTML - Select - Previous Item <br>
+                                                Эммет: HTML — выбор — предыдущий элемент
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td><br></td>
+                                        <td><br></td>
+                                        <td><br></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Alt + E, D</td>
+                                        <td>editor.emmet.action.removeTag</td>
+                                        <td>Emmet: HTML - Delete Tag <br>
+                                                Эммет: HTML — удаление тега</td>
+                                </tr>
+
+                                <tr>
+                                        <td>Alt + E, R</td>
+                                        <td>editor.emmet.action.updateTag</td>
+                                        <td>Emmet: HTML - Rename Tag <br>
+                                                Эммет: HTML — переименование тега</td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td>editor.emmet.action.splitJoinTag</td>
+                                        <td>Emmet: HTML - Split / Join Tag <br>
+                                                Эммет:: HTML — разделение/объединение тегов</td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td>editor.emmet.action.matchTag</td>
+                                        <td>Emmet: HTML - Go to - Match Tag <br>
+                                                Эммет: HTML — перейти к — соответствующий тег</td>
+                                </tr>
+
+                                <tr>
+                                        <td><br></td>
+                                        <td><br></td>
+                                        <td><br></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Alt + /</td>
+                                        <td>editor.emmet.action.toggleComment</td>
+                                        <td>Emmet: HTML - Toggle Comment <br>
+                                                Эммет: HTML — переключение комментариев<br>
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td><br></td>
+                                        <td><br></td>
+                                        <td><br></td>
+                                </tr>
+
+
+
+
+                                <tr>
+                                        <td>Alt + E, =</td>
+                                        <td>editor.emmet.action.evaluateMathExpression</td>
+                                        <td>Emmet: Evaluate Math Expression <br>
+                                                Эммет: вычисление математического выражения</td>
+                                </tr>
+
+                                <tr>
+                                        <td><br></td>
+                                        <td><br></td>
+                                        <td><br></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Alt + E, M</td>
+                                        <td>editor.emmet.action.mergeLines</td>
+                                        <td>Emmet: Merge Lines <br>
+                                                Эммет: Объединить линии</td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td>editor.emmet.action.reflectCSSValue</td>
+                                        <td>Emmet: Reflect CSS Value <br>
+                                                Эммет: отражение значения CSS</td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td>editor.emmet.action.updateImageSize</td>
+                                        <td>Emmet: Update ImageSize <br>
+                                                Эммет: обновите ImageSize</td>
+                                </tr>
+
+                                <tr>
+                                        <td><br></td>
+                                        <td><br></td>
+                                        <td><br></td>
+                                </tr>
+
+                                <tr>
+                                        <td><br></td>
+                                        <td>editor.emmet.action.incrementNumberByOne</td>
+                                        <td>Emmet: Number - Increment - By One <br>
+                                                Эммет: число — увеличение — на единицу</td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td>editor.emmet.action.incrementNumberByOneTenth</td>
+                                        <td>Emmet: Number - Increment - By One Tenth <br>
+                                                Эммет: Число — Приращение — На одну десятую</td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td>editor.emmet.action.incrementNumberByTen</td>
+                                        <td>Emmet: Number - Increment - By Ten <br>
+                                                Эммет: число — приращение — на десять</td>
+                                </tr>
+
+
+                                <tr>
+                                        <td><br></td>
+                                        <td><br></td>
+                                        <td><br></td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td>editor.emmet.action.decrementNumberByOne></td>
+                                        <td>Emmet: Number - Decrement - By One <br>
+                                                Эммет: Число — Уменьшить — На единицу</td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td>editor.emmet.action.decrementNumberByOneTenth</td>
+                                        <td>Emmet: Number - Decrement - By One Tenth <br>
+                                                Эммет: Число — уменьшение — на одну десятую</td>
+                                </tr>
+
+                                <tr>
+                                        <td><br></td>
+                                        <td>editor.emmet.action.decrementNumberByTen</td>
+                                        <td>Emmet: Number - Decrement - By Ten <br>
+                                                Эммет: Число — уменьшение — на десять</td>
+                                </tr>
+
+
+
+                        </table>
+
+                        <ol>
+                                <li><strong>Удаление элемента</strong><br>
+                                        <img src="../GIF/23.gif" alt="23gif" class="pictures1">
+                                </li>
+                                <li><strong>Выбор содержимого элемента,</strong> всего элемента или
+                                        родительского
+                                        элемента (баланс ввода/вывода)</li>
+                                <li><strong>Выполнение итерации по точкам</strong> редактирования после
+                                        раскрытия аббревиатуры</li>
+                                <li><strong>Выбор имени тега</strong> и атрибутов для редактирования</li>
+                                <li><strong>оберните HTML-код </strong>аббревиатурой</li>
+                                <li><strong>Оберните каждую строку отдельно, сокращая их</strong></li>
+                                <li><strong>переименовать элемент</strong></li>
+                        </ol>
+
                 </div>
 
-        </div>
-
-
-
-
 
 
         </div>
+
+
+
 
 </body>
 
